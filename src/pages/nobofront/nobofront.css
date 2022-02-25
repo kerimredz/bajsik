@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    background-color: black;
+    /*background: linear-gradient(-45deg, #000000, #0f0f0f, #1c1f1f, #000000);*/
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.nobofront{
+    height: 130vh;
+    background-image: url('./page_bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nobofront .nobofront-sadrzaj{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* ---------- LOGOTIP ---------- */
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-logo{
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    animation: izbor 1.2s ease;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-logo .nobofront-sadrzaj-logo-slika{
+    background-image: url('./bajsik-logo.svg');
+    background-position: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 245px;
+    cursor: pointer;
+}
+
+/* ---------- UPUTA TEXT ---------- */
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-uputa{
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-uputa p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 20px auto 20px auto;
+}
+
+/* ---------- SLIDER ---------- */
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-slider{
+    width: 100%;
+    height: auto;
+    margin: auto auto 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-slider .slider{
+    -webkit-appearance: none;
+    width: 50%;
+    height: 25px;
+    background: linear-gradient(-45deg, #ff0000, #107FC5, #ff0000);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: auto;
+}
+
+@media (max-width: 950px) {
+    .nobofront .nobofront-sadrzaj .nobofront-sadrzaj-slider .slider {
+        width: 90%;
+    }
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-slider .slider:hover{
+    opacity: 1;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-slider .slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-image: url('./thumb.svg');
+    background-size: cover;
+    
+    cursor: pointer;
+    /*clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);*/
+}
+
+/* ---------- REZULTNI PODACI BOX ---------- */
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+}
+
+@media (max-width: 950px) {
+    .nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder{
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 950px) {
+    .nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura{
+        width: 100%;
+    }
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura .nobofront-sadrzaj-kvadratura-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    width: 30%;
+    background: linear-gradient(32deg, #640505, #ff0000);
+    background-size: 200% 200%;
+    margin: auto auto 20px auto;
+    animation: kartica 4s ease infinite, glow 4s ease-in-out infinite;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura h5{
+    color: rgb(196, 196, 196);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura .nobofront-sadrzaj-kvadratura-info h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: auto 0px auto auto;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura .nobofront-sadrzaj-kvadratura-info h4{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: auto auto auto 5px;
+}
+
+/* ---------- ZELENI ---------- */
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura .green{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    width: 30%;
+    background: linear-gradient(32deg, #33ff00, #218004);
+    background-size: 200% 200%;
+    margin: auto auto 20px auto;
+    animation: kartica 4s ease infinite, glow-green 4s ease-in-out infinite;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura .green h5{
+    color: rgb(196, 196, 196);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura .green h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: auto 0px auto auto;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-infoholder .nobofront-sadrzaj-kvadratura .green h4{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: auto auto auto 5px;
+}
+
+/* ---------- PROIZVODI ---------- */
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-naslov{
+    width: 100%;
+    margin: 5px auto auto auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi-naslov h1{
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi-naslov p{
+    color: rgb(165, 165, 165);
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 20px auto auto auto;
+}
+
+@media (max-width: 950px) {
+    .nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak{
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+@media (max-width: 950px) {
+    .nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product{
+        width: 100%;
+    }
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product img{
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+    margin: auto auto 10px auto;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product .product-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product .product-text .product-text-h5{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 75%;
+    display: flex;
+    justify-content: left;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product .product-text .product-text-button{
+    width: 20%;
+    margin: auto;
+    background: linear-gradient(32deg, #640505, #ff0000);
+    background-size: 200% 200%;
+    animation: kartica 4s ease infinite, glow 4s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product .product-text .product-text-button:hover{
+    width: 20%;
+    margin: auto;
+    background: linear-gradient(32deg, #008cff, #0051ff);
+    background-size: 200% 200%;
+    animation: kartica 4s ease infinite, glow-blue 4s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-proizvodi .nobofront-sadrzaj-proizvodi-spisak .product .product-text .product-text-button h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- KORPA ---------- */
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-korpa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+
+@media (max-width: 950px) {
+    .nobofront .nobofront-sadrzaj .nobofront-sadrzaj-korpa{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-korpa h1{
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-korpa p{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.nobofront .nobofront-sadrzaj .nobofront-sadrzaj-korpa .nobofront-sadrzaj-korpa-izabrano{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
